@@ -1,0 +1,40 @@
+.companySlider-conatiner{
+    width: 100%;
+   padding: 3.5rem 6rem;
+   background: #f9fbf9;
+
+}
+.companySlider-header-container{
+    text-align: center;
+    /* padding-top: 3rem; */
+    padding-bottom: 2rem;
+}
+.companySlider-header-text{
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #18181B;
+    opacity: 0.9;
+   
+    font-family: "Poppins", sans-serif;
+
+}
+@media (max-width: 768px) {
+    .companySlider-conatiner{
+        width: 100%;
+       padding: 2.5rem 1rem;
+       background: #f9fbf9;
+    
+    }
+    .companyLogo-container{
+        padding:  1rem 10rem;
+        /* padding: 5rem; */
+        padding-right: 5rem;
+       
+    }
+    .companyLogo{
+        width: 160px;
+        margin: 0 10rem;
+    }
+
+}

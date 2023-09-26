@@ -1,0 +1,150 @@
+.problem-wrapper {
+  /* background: red; */
+  width: 100%;
+  background-image: url(./Desktopaaa.png);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.problem-container {
+  width: 100%;
+  padding: 1rem 5rem;
+}
+.problem-header-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem 0;
+}
+.problem-header-titel {
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.problem-header-sub_titel {
+  font-size: 15px;
+  font-weight: 500;
+}
+.problem-main-content-container {
+  width: 100%;
+}
+.problem-main-content-row1 {
+  width: 100%;
+  display: flex;
+}
+.problem-content {
+  width: 100%;
+  /* background: red; */
+  /* border: 2px solid black; */
+  /* gap: 10px; */
+  display: flex;
+  margin: 1rem;
+  /* padding: 1rem; */
+  gap: 0.5rem;
+}
+.problem-content-left {
+  width: 20%;
+}
+.problem-left-img-container {
+  height: 70px;
+  width: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  margin-top: 0.5rem;
+}
+.problem-left-img-container > img {
+  width: 45px;
+}
+.problem-left-img-container:hover {
+  background: skyblue;
+  cursor: pointer;
+}
+
+.problem-content-right {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.problem-content-right-title:hover {
+  color: skyblue;
+  cursor: pointer;
+}
+.problem-main-content-row2 {
+  width: 100%;
+  display: flex;
+}
+
+.problem-content-right-title {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.problem-content-right-des {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.problem-content-1 {
+  background: #4ad5c0;
+}
+.problem-content-2 {
+  background: #ef5350;
+}
+.problem-content-3 {
+  background: #039be5;
+}
+.problem-content-4 {
+  background: #607d8b;
+}
+.problem-content-5 {
+  background: #ffb74d;
+}
+.problem-content-6 {
+  background: #66bb6a;
+}
+@media (max-width: 768px) {
+    .problem-container {
+        
+        padding: 1rem 0.9rem;
+      }
+  .problem-main-content-row1 {
+    flex-direction: column;
+  }
+  .problem-main-content-row2 {
+    flex-direction: column;
+  }
+  .problem-content {
+    gap: 1rem;
+    /* flex-direction: column; */
+    /* align-items: center; */
+  /* padding: 1rem 1rem; */
+
+  }
+  .problem-content-right{
+    /* padding-right: 8rem; */
+  }
+  .problem-content-right {
+    text-align: start;
+
+
+    /* padding:1rem; */
+  }
+  .problem-content-right-title {
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+  .problem-content-right-des {
+    font-size: 18px;
+  
+}
+.problem-content-right {
+ 
+  padding: 0.5rem;
+  gap: 0.9rem;
+}
+}

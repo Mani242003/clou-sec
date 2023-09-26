@@ -1,0 +1,187 @@
+.home-wrapper {
+  width: 100%;
+  background: #f9fbf9;
+  /* background-image: url(./Desktop\ -\ 5.png);
+  background-position: c; */
+  /* font-family: 'Rubik', sans-serif; */
+}
+.home-container {
+  display: flex;
+}
+.home-container > div {
+  /* height: 200px; */
+  flex: 1;
+}
+.home-left-container {
+  /* background: red; */
+  /* background: yellow; */
+  padding-top: 8rem;
+  padding-left: 6rem;
+}
+.home-title-text {
+  font-size: 70px;
+  color: #18181B;
+  opacity: 0.8;
+  line-height: 4.5rem;
+  /* opacity: 0.8; */
+  font-family: 'Rubik', sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+
+}
+.hom-typeWriter-text {
+  color: #5e6fec;
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: "Nunito", sans-serif;
+
+}
+.home-des-container {
+  padding-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.home-des-text {
+  font-size: 16px;
+}
+.home-rateUs-container {
+  padding: 1.5rem 0;
+  width: 100%;
+}
+.home-rateUs-top {
+  display: flex;
+
+  align-items: center;
+  /* justify-content:space-between; */
+  height: 30px;
+  /* padding-top: 1rem; */
+
+  /* justify-content: flex-start; */
+  /* padding-top: 0.7rem; */
+}
+.home-start-lottie {
+  width: 200px;
+  /* padding-right: 9rem; */
+  position: absolute;
+  left: 4%;
+}
+.home-logo-conatiner {
+  /* background: #FF492C; */
+  position: absolute;
+  left: 18%;
+}
+.home-top-start-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 21%;
+  opacity: 0.8;
+  
+}
+.home-bottom-start-text {
+  /* padding: 0.9rem 0; */
+  font-size: 14px;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.home-button-container {
+  width: 55%;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.home-button-left {
+  padding: 0.6rem 1.7rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #5e6fec;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.home-button-container>button:hover{
+  cursor: pointer;
+}
+
+.home-button-right {
+  padding: 0.6rem 1.7rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border: 1px solid #5e6fec;
+  color: #5e6fec;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 4px;
+  width: 100%;
+}
+/*----right side---- */
+.home-right-container {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 27%; */
+  /* background-color: blue; */
+}
+.lottie-container {
+  width: 30rem;
+  z-index: 1;
+
+  /* height: px; */
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+  /* Left side */
+
+  .home-left-container{
+    padding-top: 7.5rem;
+    padding-left: 2rem;
+  }
+  .home-title-text {
+    font-size: 50px;
+    
+    line-height: 3.5rem;
+    /* opacity: 0.8; */
+  }
+  .home-des-container {
+    font-size: 14px;
+    padding-right: 2rem;
+  }
+  .home-start-lottie {
+ 
+    left: -3%;
+  }
+  .home-logo-conatiner {
+    /* background: #FF492C; */
+    position: absolute;
+    left: 40%;
+  }
+  .home-top-start-text {
+    
+    left: 50%;
+  }
+  
+  .home-button-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  
+    justify-content: space-between;
+  }
+
+
+
+
+  /* right side */
+  .home-right-container {
+    padding-top: 20px;
+    /* display: none; */
+  }
+
+}

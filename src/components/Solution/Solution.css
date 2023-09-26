@@ -1,0 +1,152 @@
+.solution-wrapper{
+    width: 100%;
+    background: #F9FBF9;
+}
+.solution-container{
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.solution-header{
+    text-align: start;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    border-left: 2px solid black;
+    padding-left: 1.3rem;
+    
+}
+.solution-main-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    
+}
+.solution-main-content{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem ;
+    border-radius: 1rem;
+}
+.solution-main-content>div{
+    flex: 1;
+
+}
+.solution-main-content-left{
+    gap: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.solution-modified-lottie{
+    width: 30rem;
+    border-radius: 10px;
+}
+.solution-left-content-text1{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+.solution-left-content-text2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.solution-left-content-text3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-right: 4%;
+    opacity: 0.9;
+}
+
+.solution-left-content-bottom{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.9;
+    position: relative;
+
+   
+}
+
+
+  .solution-left-content-bottom:hover{
+    opacity: 0.9;
+  }
+  .solution-left-content-bottom::after{
+    content: '';
+    position: absolute;
+  
+  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+    transform: scaleX(0);
+    margin-top: 1rem;
+    transform-origin: right;
+    transition: all 250ms ease-in;
+    
+  }
+  .solution-left-content-bottom:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #031535;
+  }
+  @media (max-width:768px) {
+    .solution-main-content{
+        flex-direction: column;
+      
+    }
+    .solution-container{
+        width: 100%;
+        padding: 1rem;
+        
+        gap: 1.5rem;
+    }
+    .solution-header{
+        font-size: 1.3rem;
+        padding-left: 1.3rem;
+        
+    }
+    .solution-main-content{
+       
+        padding: 0.5rem ;
+    }
+    .solution-modified-lottie{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .solution-main-content-container{
+      padding: 1rem;
+        
+    }
+    .solution-main-content>div{
+        padding: 0.7rem;
+    
+    }
+    .solution-left-content-text2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .solution-left-content-bottom{
+        width: 45%;
+        
+       
+    }
+    .solution-main-content-left{
+        gap: 1rem;
+        
+    }
+  
+  }

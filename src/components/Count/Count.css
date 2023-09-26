@@ -1,0 +1,85 @@
+.count-wrappper{
+    width: 100%;
+    height: 15rem;
+    background-image: url(./Desktop\ -\ 67.png);
+    background-position: center;
+
+}
+.count-container{
+    width: 100%;
+    display: flex;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.count-col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.count-container{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+
+}
+.count-left{
+    width:50%
+
+}
+.count-left img{
+    width: 7rem;
+}
+.count-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.count-col-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.count-right-num{
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif; 
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+display: flex;
+
+}
+.count-right-text{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+}
+@media (max-width: 768px) {
+    .count-container{
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.5;
+        padding-right: 2rem;
+    }
+    .count-wrappper{
+        height: 42rem;
+        max-width: 100%;
+    }
+    .count-col-2{
+        gap: 2rem;
+
+        
+    }
+    .count-col-1{
+     gap: 2rem;
+    }
+ 
+}
