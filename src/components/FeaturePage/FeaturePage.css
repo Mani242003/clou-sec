@@ -1,0 +1,169 @@
+.FeaPage-wrapper {
+  width: 100%;
+  background: #F8F9FA;
+  font-family: "Poppins", sans-serif;
+}
+.FeaPage-Container {
+  padding: 2rem;
+}
+.feaPage-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0rem 3rem;
+  gap: 0.5rem;
+}
+
+.feaPage-header-text1 {
+  color: #5E6FEC;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+.feaPage-header-text2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.feaPage-header-text3 {
+  color: black;
+  opacity: 0.8;
+}
+.feaPage-main-content {
+  padding: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.feaPage-main-content > div {
+  flex: 1;
+}
+.feaPage-col-1 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.feaPage-col-1-img-container {
+  width: 4rem;
+  height: 4rem;
+  background: #D1DEFF;
+  border-radius: 999px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feaPage-col-1-img-container > img {
+  width: 2rem;
+}
+
+.feaPage-col-1-text-1 {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.feaPage-col-1-text-2 {
+  color: black;
+
+  opacity: 0.8;
+  font-family: "Open Sans", sans-serif;
+}
+.feaPage-col-1-text-3 {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.feaPage-col-1-bottom-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.feaPage-col-1-text-4 {
+  color: black;
+
+  opacity: 0.8;
+  font-family: "Open Sans", sans-serif;
+}
+.feaPage-main-col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* padding: 1rem; */
+}
+.feaPage-main-col-2> div{
+  flex: 1;
+}
+.feaPage-col-2-top-container {
+  display: flex;
+  background: #242e53;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+ 
+}
+.feaPage-col-2-bottom-container {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #242e53;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.feaPage-col-2-top-bottom-container{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.feaPage-col-2-text-4{
+  color: black;
+  opacity: 0.8;
+}
+.feaPage-col-2-bottom-bottom-container{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+@media (max-width: 768px) {
+  .FeaPage-Container {
+    padding: 1rem;
+  }
+  .feaPage-header {
+    
+    padding: 0.5rem ;
+    gap: 0.5rem;
+  }
+  
+.feaPage-header-text1 {
+  color: #ffb116;
+}
+.feaPage-header-text2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.feaPage-header-text3 {
+  color: #d9d9d9;
+}
+.feaPage-main-content {
+  padding: 1rem;
+ 
+  flex-direction: column;
+}
+.feaPage-col-1 {
+ 
+  padding: 1.4rem;
+}
+  
+}

@@ -1,0 +1,178 @@
+.countPage-wrapper {
+  width: 100%;
+  background: #f9fbf9;
+  height: 560px;
+  overflow: hidden;
+}
+
+.countPage-container {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.countPage-circleTop {
+  background: #F0F6F9;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 999px;
+  top: 10px;
+  left: -40px;
+
+  position: absolute;
+}
+.countPage-circlebottom {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 999px;
+  position: absolute;
+  background: #F0F6F9;
+  top: 25rem;
+  left: 20rem;
+}
+
+.countPage-main-content {
+  display: flex;
+}
+.countPage-main-content > div {
+  flex: 1;
+}
+.countPage-left-container {
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  gap: 2rem;
+  padding: 9rem 5rem;
+  
+}
+.countpage-left-text-1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: black;
+  opacity: 0.8;
+}
+.countpage-left-text-2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: black;
+  opacity: 0.8;
+}
+.countpage-left-button {
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: none;
+  background: #5E6FEC;
+  color: white;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  z-index: 1;
+}
+.countpage-left-button:hover {
+ cursor: pointer;
+  border: 1px solid #5E6FEC;
+  color:#5E6FEC ;
+  background: transparent;
+  
+
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.countPage-right-container {
+  position: relative;
+}
+.countPage-right-oval-circle {
+  top: 5rem;
+  position: absolute;
+  z-index: 1;
+}
+.countPage-right-oval-circle > img {
+  /* width: 6rem;
+        height: 6rem; */
+  /* width: 1rem; */
+}
+.countPage-right-count-container {
+  z-index: 1;
+  width: 17rem;
+  border-radius: 8px;
+  height: 12rem;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.countPage-right-count-container1 {
+  left: -4rem;
+  top: 4rem;
+  background: #F0F6F9;
+
+}
+.countPage-right-count-container2 {
+  left: -4rem;
+  top: 17.5rem;
+  background: #F0F6F9;
+
+}
+.countPage-right-count-container3 {
+  left: 14rem;
+  top: 11.5rem;
+  background: #F0F6F9;
+
+}
+
+.countPage-right-count-content-text1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: black;
+  opacity: 0.8;
+}
+.countPage-right-count-content-text2 {
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .countPage-wrapper {
+    /* width: 100%;
+            background: #0B163F;
+           
+            /* overflow: hidden; */
+    height: 68rem;
+  }
+  .countPage-main-content {
+    flex-direction: column;
+  }
+  .countPage-left-container {
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .countpage-left-text-1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .countPage-right-count-container1 {
+    left: 16%;
+    top: 0;
+    background: white;
+  }
+  .countPage-right-count-container2 {
+    left: 16%;
+    top: 28rem;
+    background: white;
+  }
+  .countPage-right-count-container3 {
+    left: 16%;
+    top: 14rem;
+    background: white;
+  }
+  /* .countPage-right-container{
+    display: flex;
+    position: relative;
+  } */
+
+}

@@ -10,15 +10,20 @@ import {BsFillCalendarFill} from "react-icons/bs"
 const RoadMap = () => {
   return (
     <section className="r-wraper " id="roadMap">
+      {/* <div className="roadmap-circle1"></div>
+      <div className="roadmap-circle2"></div>
+      <div className="roadmap-circle3"></div>
+      <div className="roadmap-circle4"></div> */}
+
+
       <div className="r-header-titel">
         <span className="primaryText r-header">
           Elevating Cloud Security to<br/> New Horizons
         </span>
       </div>
+      
 
-      <div className="r-timeLine-container"  data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000">
+      <div className="r-timeLine-container" >
         <div className="r-container r-left-container" >
           <img src={aws} alt="" className="r-left-outerImg" />
           <div className="textBoxContainer" style={{ background: "#E4F6EF" }}>

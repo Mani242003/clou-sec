@@ -3,6 +3,7 @@
   background: #031535;
 
   color: white;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .footer-container{
@@ -16,9 +17,7 @@
   display: flex;
 }
 .footer-middel-container>div{
-  font-family: 'Rubik', sans-serif; 
-
-  padding: 4rem;
+  padding: 3rem;
 
   flex: 1;
 }

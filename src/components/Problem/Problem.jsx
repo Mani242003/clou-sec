@@ -6,7 +6,7 @@ import time from "../../assets/problemPage/time.svg"
 import team from "../../assets/problemPage/team.svg"
 import report from "../../assets/problemPage/report.svg"
 import process from "../../assets/problemPage/process.svg"
-
+import{motion} from "framer-motion"
 
 
 
@@ -14,8 +14,7 @@ import process from "../../assets/problemPage/process.svg"
 const Problem = () => {
   return (
     <section className="problem-wrapper" >
-      <div className="problem-container" data-aos="fade-down"
-    data-aos-anchor-placement="top-center"  data-aos-duration="800">
+      <div className="problem-container" >
         <div className="problem-header-container">
           <span className="problem-header-titel">
             Cloud Security Challenges We Solve
@@ -26,7 +25,10 @@ const Problem = () => {
         </div>
         <div className="problem-main-content-container">
           <div className="problem-main-content-row1">
-            <div className="problem-content ">
+            <motion.div className="problem-content "
+            
+            
+            >
               <div className="problem-content-left" >
                 <div className="problem-left-img-container problem-content-1"  >
                   <img src={security} alt="" />
@@ -42,7 +44,7 @@ const Problem = () => {
                   optimizing web usage.
                 </span>
               </div>
-            </div>
+            </motion.div>
             <div className="problem-content " >
               <div className="problem-content-left">
                 <div className="problem-left-img-container problem-content-2">

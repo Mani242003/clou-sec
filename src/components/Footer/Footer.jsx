@@ -24,8 +24,8 @@ const Footer = () => {
         </div> */}
         <div className="footer-middel-container" >
           
-          <div className="footer-middel-col1-container"  data-aos="fade-down"
-    data-aos-anchor-placement="top-center"  data-aos-duration="100" >
+          <div className="footer-middel-col1-container"  
+    >
           <div className="footer-top-container">
            <img src={Logo} alt="" />
          
@@ -68,8 +68,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="footer-middel-col2-container"  data-aos="fade-up"
-    data-aos-anchor-placement="top-center"  data-aos-duration="100" >
+          <div className="footer-middel-col2-container"  >
             <div className="footer-middel-col2lleft">
               <Link  to="mainPage"
                     spy={true}
@@ -146,8 +145,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="footer-middel-col3-container"  data-aos="fade-down"
-    data-aos-anchor-placement="top-center"  data-aos-duration="100" >
+          <div className="footer-middel-col3-container"   >
             <span className="footer-col1-titel-text1">Follow us</span>
             <div className="footer-social-links">
               <div className="footermiddel-col3-link">

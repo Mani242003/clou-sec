@@ -2,13 +2,55 @@
 .r-wraper {
   /* background: #F9FBF9; */
   background-image: url(./Desktopaaa.png);
-  /* font-family: 'Poppins', sans-serif; */
-  background-position: center;
+
+  /* background: #0B163F; */
+  position: relative;
+  overflow: hidden;
+
 
 
   padding: 2rem;
 }
+.roadmap-circle1{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 999px;
+  position: absolute;
+  background: #071C4D;
+  top: 10rem;
+  left: -10rem;
+}
 
+.roadmap-circle2{
+  background: #071C4D;
+
+  width: 30rem;
+  height: 30rem;
+  border-radius: 999px;
+  top: -230px;
+  right:-10rem;
+  position: absolute;
+}
+.roadmap-circle3{
+  background: #071C4D;
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 999px;
+  top: 20rem;
+  right:10rem;
+  position: absolute;
+}
+.roadmap-circle4{
+  background: #071C4D;
+
+  width: 30rem;
+  height: 30rem;
+  border-radius: 999px;
+  bottom: -20rem;
+  left:20rem;
+  position: absolute;
+}
 .r-timeLine-container {
   position: relative;
   max-width: 1200px;
@@ -19,11 +61,12 @@
   margin-left: 3%;
   
   color: black;
-  opacity: 0.8;
   font-weight: bold;
   font-size: 2rem;
   border-left: 2px solid black;
+  opacity: 0.8;
   padding-left: 0.5rem;
+  font-family: 'Poppins', sans-serif;
 }
 .r-container {
   padding: 10px 50px;
@@ -347,12 +390,7 @@ gap: 3rem;
   .r-right-container img {
     left: 10px;
   }
-  .r-left-container-arrow,
-  .r-right-container-arrow {
-    border-right: 15px solid white;
-    border-left: 0;
-    left: -14px;
-  }
+
   .textBoxContainer-left > img {
     
     

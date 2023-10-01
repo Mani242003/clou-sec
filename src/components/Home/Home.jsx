@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 import Lottie from "lottie-react";
-import sjWLdPyCSD from "./sjWLdPyCSD.json";
-import str from "./str.json";
-import Logo from "./Logo.png";
+import HomeAniRight from "../../assets/Home/sjWLdPyCSD.json";
+import star from "../../assets/Home/str.json";
+import Logo from "../../assets/Home/Logo.png";
+import {motion} from "framer-motion"
 
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
@@ -11,10 +12,9 @@ import { Link } from "react-scroll";
 function Home() {
   return (
     <section className="home-wrapper" id="mainPage" >
-      <div className="home-container" data-aos="fade-up"
-    data-aos-anchor-placement="top-center"  data-aos-duration="1000" >
+      <div className="home-container"  >
         <div className="home-left-container">
-          <div className="home-title-container">
+          <motion.div className="home-title-container">
             <h1 className="home-title-text">
               Your Cloud,
               <br />
@@ -29,7 +29,7 @@ function Home() {
                 />
               </span>
             </h1>
-          </div>
+          </motion.div>
           <div className="home-des-container">
             <span className="home-des-text">
               Welcome to ClouSec, where we bring you a comprehensive solution
@@ -42,7 +42,7 @@ function Home() {
           <div className="home-rateUs-container">
             <div className="home-rateUs-top">
               <div className="home-start-lottie">
-                <Lottie animationData={str} />
+                <Lottie animationData={star} />
               </div>
               <div className="home-logo-conatiner">
                 <img src={Logo} alt="" width={30} />
@@ -81,7 +81,7 @@ function Home() {
         </div>
         <div className="home-right-container"  >
           <div className="lottie-container">
-            <Lottie animationData={sjWLdPyCSD} />
+            <Lottie animationData={HomeAniRight} />
           </div>
         </div>
       </div>

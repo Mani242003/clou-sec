@@ -27,12 +27,10 @@ const Solution = () => {
             
           >
             <div className="solution-main-content-left "   >
-              <span className="solution-left-content-text1" style={{ color: "#5AA8B2" }} data-aos="fade-down"
-            data-aos-anchor-placement="top-center"  data-aos-duration="50">
+              <span className="solution-left-content-text1" style={{ color: "#5AA8B2" }}  >
                 Centralized Security Findings Visibility
               </span>
-              <span className="solution-left-content-text2" data-aos="fade-down"
-            data-aos-anchor-placement="top-center"  data-aos-duration="100">
+              <span className="solution-left-content-text2" >
                 Centralized Security Findings
                 <br />
                 Visibility
@@ -71,8 +69,7 @@ const Solution = () => {
               Compliance and Audit Readiness
 
               </span>
-              <span className="solution-left-content-text2" data-aos="fade-up"
-            data-aos-anchor-placement="top-center"  data-aos-duration="100">
+              <span className="solution-left-content-text2" >
               Compliance and Audit <br/>Readiness
               </span>
               <span className="solution-left-content-text3">
@@ -108,8 +105,7 @@ const Solution = () => {
               Effective Workflow for Suppressing
               <br/>Security Findings
               </span>
-              <span className="solution-left-content-text2"data-aos="fade-down"
-            data-aos-anchor-placement="top-center"  data-aos-duration="100">
+              <span className="solution-left-content-text2">
               Effective Workflow for Suppressing
               <br/>Security Findings
               </span>
@@ -145,8 +141,7 @@ const Solution = () => {
               <span className="solution-left-content-text1" style={{ color: "#6F7730" }}>
               Improved Collaboration and Communication Flexibility
               </span>
-              <span className="solution-left-content-text2" data-aos="fade-up"
-            data-aos-anchor-placement="top-center"  data-aos-duration="100">
+              <span className="solution-left-content-text2" >
               Improved Collaboration and Communication Flexibility
               </span>
               <span className="solution-left-content-text3">
