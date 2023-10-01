@@ -14,7 +14,7 @@ function Navbar() {
     }
   };
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setNav(true);
     } else {
       setNav(false);
@@ -167,7 +167,7 @@ function Navbar() {
           setmenuOpened((pre) => !pre);
         }}
       >
-        <RiMenu3Fill size={40} />
+        <RiMenu3Fill size={34} />
       </div>
     </section>
   );

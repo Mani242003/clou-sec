@@ -149,12 +149,12 @@
   color: #ffb116;
 }
 .feaPage-header-text2 {
-  color: white;
-  font-size: 2rem;
+  color: black;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .feaPage-header-text3 {
-  color: #d9d9d9;
+  color: black;
 }
 .feaPage-main-content {
   padding: 1rem;

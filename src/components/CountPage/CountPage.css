@@ -15,7 +15,7 @@
   width: 22rem;
   height: 22rem;
   border-radius: 999px;
-  top: 10px;
+  top: -10px;
   left: -40px;
 
   position: absolute;
@@ -174,5 +174,10 @@
     display: flex;
     position: relative;
   } */
+  .countPage-circleTop {
+ 
+    top: -140px;
+   
+  }
 
 }

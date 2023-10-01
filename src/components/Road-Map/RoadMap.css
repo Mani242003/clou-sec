@@ -461,8 +461,15 @@ gap: 3rem;
   }
 
   .r-date{
-    /* padding-right: 10px; */
     font-size: 200px;
+  }
+  .r-header-titel {
+   
+    
+    
+    font-size: 1.2rem;
+    
+   
   }
   
 }

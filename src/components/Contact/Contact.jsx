@@ -15,7 +15,7 @@ const Contact = () => {
             IT staffs.
           </span>
           <span className="contact-left-bottom-text">
-            We’re available for 8 hours a day! Contact to require <br/> a detailed
+            We’re available for 8 hours a day! Contact to require  a detailed
             analysis and assessment of your plan.
           </span>
         </div>

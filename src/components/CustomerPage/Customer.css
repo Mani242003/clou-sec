@@ -91,20 +91,22 @@ font-family: 'Open Sans', sans-serif;
     
     }
     .customer-left-img-container>img{
-        width: 95%;
+        width: 100%;
         height: 275px;
-        margin-left: 4%;
+        /* margin-left: 4%; */
         padding: 0;
 
     }
     .customer-right-bottom{
-        width: 90%;
+        width: 95%;
+        margin-left: 3%;
+
         
         
     }
     .customer-container-right{
        
-        padding: 0rem 1rem;
+        padding: 1.5rem 1rem;
     }
     .customer-right-text-2{
         font-size: 1.7rem;
