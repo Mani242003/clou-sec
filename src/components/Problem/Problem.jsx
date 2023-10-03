@@ -27,7 +27,6 @@ const Problem = () => {
           <div className="problem-main-content-row1">
             <motion.div className="problem-content "
             
-            
             >
               <div className="problem-content-left" >
                 <div className="problem-left-img-container problem-content-1"  >

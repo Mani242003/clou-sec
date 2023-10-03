@@ -18,9 +18,9 @@ font-family: 'Open Sans', sans-serif;
     padding: 2rem;
 }
 .customer-left-img-container>img{
-    width: 600px;
-    height: 470px;
+   width: 40rem;
     border-radius: 7px;
+    overflow: hidden;
 }
 .customer-container-right{
     width: 100%;
@@ -91,8 +91,7 @@ font-family: 'Open Sans', sans-serif;
     
     }
     .customer-left-img-container>img{
-        width: 100%;
-        height: 275px;
+       width: 18rem;
         /* margin-left: 4%; */
         padding: 0;
 

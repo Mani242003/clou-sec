@@ -37,8 +37,9 @@
 .home-des-container {
   color: black;
   opacity: 0.8;
-  padding-top: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  padding-top: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+
 }
 .home-des-text {
   font-size: 16px;
@@ -46,6 +47,7 @@
 .home-rateUs-container {
   padding: 1.5rem 0;
   width: 100%;
+  
 }
 .home-rateUs-top {
   display: flex;
@@ -68,6 +70,7 @@
   /* background: #FF492C; */
   position: absolute;
   left: 18%;
+  margin-left: 3%;
 }
 .home-top-start-text {
   font-size: 1.5rem;
@@ -133,6 +136,16 @@
 
   /* height: px; */
 }
+.home-top-start-text{
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.8;
+  margin-left: 3%;
+}
+.contact-left-bottom-text{
+  font-family: 'Open Sans', sans-serif;
+
+  
+}
 
 @media (max-width: 768px) {
   .home-container {
@@ -145,9 +158,9 @@
     padding-left: 2rem;
   }
   .home-title-text {
-    font-size: 50px;
+    font-size: 45px;
     
-    line-height: 3.5rem;
+    line-height: 3rem;
     /* opacity: 0.8; */
   }
   .home-des-container {
@@ -156,7 +169,7 @@
   }
   .home-start-lottie {
  
-    left: -3%;
+    left: -5%;
   }
   .home-logo-conatiner {
     /* background: #FF492C; */
@@ -166,15 +179,28 @@
   .home-top-start-text {
     
     left: 50%;
-  }
-  
-  .home-button-container {
-    width: 90%;
-    display: flex;
-    align-items: center;
-  
+      font-size: 1.5rem;
+      display: flex;
     justify-content: space-between;
   }
+  .home-button-container {
+    width: 100%;
+   
+  }
+
+  .home-button-left {
+    padding: 0.6rem 1.7rem;
+  
+    font-weight: 400;
+   
+  }
+  
+  .home-button-right {
+   
+    font-weight: 500;
+   
+  }
+ 
 
 
 
@@ -184,5 +210,9 @@
     padding-top: 20px;
     /* display: none; */
   }
+.home-bottom-start-text{
+  font-weight: 500;
+  font-size: 13px;
+}
 
 }
