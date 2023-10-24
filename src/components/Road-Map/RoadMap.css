@@ -11,7 +11,7 @@
 
   padding: 2rem;
 }
-.roadmap-circle1{
+/* .roadmap-circle1{
   width: 25rem;
   height: 25rem;
   border-radius: 999px;
@@ -50,7 +50,7 @@
   bottom: -20rem;
   left:20rem;
   position: absolute;
-}
+} */
 .r-timeLine-container {
   position: relative;
   max-width: 1200px;
@@ -61,12 +61,11 @@
   margin-left: 3%;
   
   color: black;
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight:600;
+  font-size: 1.8rem;
   border-left: 2px solid black;
   opacity: 0.8;
   padding-left: 0.5rem;
-  font-family: 'Poppins', sans-serif;
 }
 .r-container {
   padding: 10px 50px;
@@ -346,10 +345,10 @@ gap: 3rem;
 }
 .r-date{
   opacity: 0.8;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   }
   .r-dec{
-    font-family: 'Rubik', sans-serif; 
+    /* font-family: 'Rubik', sans-serif;  */
   }
   
 

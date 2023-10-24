@@ -13,15 +13,7 @@ const Footer = () => {
   return (
     <section className="footer-wrapper" id="footer">
       <div className="footer-container">
-        {/* <div className="footer-top-container">
-          <img src={Logo} alt="" />
-          <span className="footer-col1-text">
-            our Vision is to give a best solution for all people
-          </span>
-          <button className="g-button">
-            <a href="mailto:jerome.stigmata@gmail.com">Get Started</a>
-          </button>
-        </div> */}
+    
         <div className="footer-middel-container" >
           
           <div className="footer-middel-col1-container"  
@@ -43,36 +35,35 @@ const Footer = () => {
             <div className="footer-col1-row">
               <LuPhoneCall className="footer-col1-icon" />
 
-              <Link>
+              <a href="tel:9345336553" style={{color:'white',textDecoration:"none"}}>
                 <span className="footer-col1-call-text footer-common-text-style">
                   +91 9345336553
                 </span>
-              </Link>
+              </a>
             </div>
             <div className="footer-col1-row">
               <FiMail className="footer-col1-icon" />
 
-              <Link>
+              <a href="mailto:jerome@stigmatatech.com" style={{color:'white',textDecoration:"none"}}>
                 <span className="footer-col1-mail-text footer-common-text-style">
                   jerome@stigmata.co.in
                 </span>
-              </Link>
+              </a>
             </div>
             <div className="footer-col1-row">
               <TbWorld />
 
-              <Link>
+              <a  href="https://stigmatatech.com/"  style={{color:'white',textDecoration:"none"}} target="_blank">
                 <span className="footer-col1-web-text footer-common-text-style">
                   www.clousec.io
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
           <div className="footer-middel-col2-container"  >
             <div className="footer-middel-col2lleft">
               <Link  to="mainPage"
                     spy={true}
-                    smooth={true}
                     offset={-60}
                     duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
@@ -81,7 +72,6 @@ const Footer = () => {
               </Link>
               <Link to="fea"
                     spy={true}
-                    smooth={true}
                     offset={-60}
                     duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
@@ -90,7 +80,6 @@ const Footer = () => {
               </Link>
               <Link to="roadMap"
                     spy={true}
-                    smooth={true}
                     offset={-60}
                     duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
@@ -100,7 +89,6 @@ const Footer = () => {
               <Link
                to="solution"
                spy={true}
-               smooth={true}
                offset={-60}
                duration={600}>
                 <span className="footer-col1-web-text footer-common-text-style">
@@ -149,7 +137,9 @@ const Footer = () => {
             <span className="footer-col1-titel-text1">Follow us</span>
             <div className="footer-social-links">
               <div className="footermiddel-col3-link">
-                <BiWorld size={24} />
+                <Link to="https://stigmatatech.com/">
+                <BiWorld size={24} /></Link>
+                
               </div>
               <div className="footermiddel-col3-link">
                 <FaFacebookF size={24} />

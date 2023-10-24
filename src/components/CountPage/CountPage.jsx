@@ -1,21 +1,37 @@
-import React,{useState} from "react";
+import React,{useState,useEffect,useRef} from "react";
 import "./CountPage.css";
 import { Link } from "react-scroll";
 import ovalShape from "../../assets/Ellipse 4.png";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import {motion,useInView,useAnimation} from "framer-motion";
+
 
 
 const CountPage = () => {
   const [counterOn, setcounterOn] = useState(false)
+  const ref =useRef(null)
+  const isView =useInView(ref,{once:false})
+ const mainControls=useAnimation()
+  useEffect(()=>{
+    if(isView){
+      mainControls.start('visible')
+    }
+  },[isView])
 
   return (
     <ScrollTrigger onEnter={()=>setcounterOn(true)} onExit={()=>setcounterOn(false)}>
     <section className="countPage-wrapper">
       <div className="countPage-container">
         <div className="countPage-circleTop"></div>
-        <div className="countPage-main-content">
-          <div className="countPage-left-container">
+        <div ref={ref} className="countPage-main-content">
+          <motion.div   variants={{
+            hidden:{opacity:0,y:-75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}} className="countPage-left-container">
             <span className="countpage-left-text-1">
               Actionable Reports to Grow your Business
             </span>
@@ -25,11 +41,23 @@ const CountPage = () => {
               scenarios. Uniquely evolve partnerships rather than cross-platform
               interfaces.
             </span>
-            <Link>
-              <button className="countpage-left-button">Get start Now !</button>
+            <Link 
+            to="contact"
+            spy={true}
+            // smooth={true}
+            offset={-60}
+            duration={600}>
+              <button className="countpage-left-button">Get Start Now !</button>
             </Link>
-          </div>
-          <div className="countPage-right-container">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden:{opacity:0,y:75},
+              visible:{opacity:1,y:0}
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{duration:0.5 ,delay:0.25}} className="countPage-right-container">
             <div className="countPage-right-oval-circle">
               <img src={ovalShape} alt="" />
             </div>
@@ -51,7 +79,7 @@ const CountPage = () => {
               Happy customer in worldwide
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="countPage-circlebottom"></div>

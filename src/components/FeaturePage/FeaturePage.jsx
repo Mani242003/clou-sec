@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef,useEffect} from "react";
 import "./FeaturePage.css";
 import accesscontrol from "../../assets/features/accesscontrol.svg";
 import insights from "../../assets/features/insights.svg";
@@ -6,14 +6,25 @@ import compliance from "../../assets/features/compliance.svg";
 import suppress from "../../assets/features/suppress.svg";
 import inventory from "../../assets/features/inventory.svg";
 import servicesdummyit from "../../assets/features/bookmark-services.svg";
+import {motion,useInView,useAnimation} from "framer-motion";
+
 
 import { BsFillRecord2Fill } from "react-icons/bs";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 const FeaturePage = () => {
+  const ref =useRef(null)
+  const isView =useInView(ref,{once:false})
+ const mainControls=useAnimation()
+  useEffect(()=>{
+    if(isView){
+      mainControls.start('visible')
+    }
+  },[isView])
+ 
   return (
     <section className="FeaPage-wrapper" id="fea">
-      <div className="FeaPage-Container">
+      <div className="FeaPage-Container" ref={ref}>
         <div className="feaPage-header">
           <span className="feaPage-header-text1">
             Explore Our Product Features
@@ -26,7 +37,13 @@ const FeaturePage = () => {
             leadership skills.
           </span>
         </div>
-        <div className="feaPage-main-content">
+        <motion.div   variants={{
+            hidden:{opacity:0,y:-75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}} className="feaPage-main-content" >
           <div className="feaPage-col-1">
             <div className="feaPage-col-1-img-container">
               <img src={servicesdummyit} alt="" />
@@ -186,7 +203,7 @@ const FeaturePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

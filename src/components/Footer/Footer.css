@@ -3,7 +3,6 @@
   background: #031535;
 
   color: white;
-  font-family: 'Open Sans', sans-serif;
 
 }
 .footer-container{
@@ -63,7 +62,6 @@
   padding: 0.5rem 1rem;
   color: white;
   transition: all 100ms ease-in-out;
-  font-family: 'Rubik', sans-serif; 
 
 }
 .g-button:hover{
@@ -173,6 +171,9 @@ align-items: center;
 .footer-col1-text{
   text-transform: uppercase;
   opacity: 0.9;
+}
+.footermiddel-col3-link,.footermiddel-col1-link,.footermiddel-col2-link>a{
+  color: #031535;
 }
 
 

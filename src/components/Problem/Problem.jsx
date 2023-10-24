@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef,useEffect} from "react";
 import "./Problem.css";
 import security from "../../assets/problemPage/security.svg";
 import gear from "../../assets/problemPage/gear.svg"
@@ -6,25 +6,42 @@ import time from "../../assets/problemPage/time.svg"
 import team from "../../assets/problemPage/team.svg"
 import report from "../../assets/problemPage/report.svg"
 import process from "../../assets/problemPage/process.svg"
-import{motion} from "framer-motion"
+import {motion,useInView,useAnimation} from "framer-motion";
+
 
 
 
 
 const Problem = () => {
+  
+  const ref =useRef(null)
+  const isView =useInView(ref,{once:false})
+ const mainControls=useAnimation()
+  useEffect(()=>{
+    if(isView){
+      mainControls.start('visible')
+    }
+  },[isView])
   return (
-    <section className="problem-wrapper" >
+    <section className="problem-wrapper" id="problem" >
       <div className="problem-container" >
         <div className="problem-header-container">
           <span className="problem-header-titel">
             Cloud Security Challenges We Solve
           </span>
           <span className="problem-header-sub_titel">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cum, vel provident aperiam.
-          </span>
+          We address and mitigate cloud security challenges to ensure the safe and compliant operation of your cloud-based systems and data.          </span>
         </div>
-        <div className="problem-main-content-container">
-          <div className="problem-main-content-row1">
+        <div 
+        ref={ref} 
+           className="problem-main-content-container">
+          <motion.div variants={{
+            hidden:{opacity:0,y:-75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}} className="problem-main-content-row1">
             <motion.div className="problem-content "
             
             >
@@ -38,9 +55,7 @@ const Problem = () => {
                   Fragmented Security Findings
                 </span>
                 <span className="problem-content-right-des">
-                  Web analytics is the measurement, collection, analysis and
-                  reporting of web data for purposes of under standing and
-                  optimizing web usage.
+                Fragmented security findings across an organization's infrastructure can lead to increased exposure to cyber threats.
                 </span>
               </div>
             </motion.div>
@@ -55,9 +70,7 @@ const Problem = () => {
                 Lack of Centralized Visibility
                 </span>
                 <span className="problem-content-right-des">
-                  Web analytics is the measurement, collection, analysis and
-                  reporting of web data for purposes of under standing and
-                  optimizing web usage.
+                A lack of centralized visibility into an organization's IT infrastructure can result in blind spots, making it challenging to monitor and secure the entire environment effectively.
                 </span>
               </div>
             </div>
@@ -72,14 +85,18 @@ const Problem = () => {
                 Time-Consuming Analysis
                 </span>
                 <span className="problem-content-right-des">
-                  Web analytics is the measurement, collection, analysis and
-                  reporting of web data for purposes of under standing and
-                  optimizing web usage.
+                Time-consuming analysis can delay critical decision-making, hinder productivity, and strain resources, particularly when dealing with vast datasets or complex problems.
                 </span>
               </div>
             </div>
-          </div>
-          <div className="problem-main-content-row2">
+          </motion.div>
+          <motion.div  variants={{
+            hidden:{opacity:0,y:75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}} className="problem-main-content-row2">
             <div className="problem-content ">
               <div className="problem-content-left">
                 <div className="problem-left-img-container problem-content-4"  >
@@ -91,9 +108,7 @@ const Problem = () => {
                 Limited Collaboration and Communication
                 </span>
                 <span className="problem-content-right-des">
-                  Web analytics is the measurement, collection, analysis and
-                  reporting of web data for purposes of under standing and
-                  optimizing web usage.
+                Limited collaboration and communication among team members often result in missed opportunities, reduced efficiency, and misunderstandings that can hinder project success.
                 </span>
               </div>
             </div>
@@ -108,9 +123,7 @@ const Problem = () => {
                 Inefficient Reporting
                 </span>
                 <span className="problem-content-right-des">
-                  Welcome to ClouSec, where we bring you a comprehensive
-                  solution for enhanced security, streamlined inventory
-                  management, and efficient suppress workflow handling.
+                Inefficient reporting processes can lead to delays, errors, and missed insights, making it challenging for organizations to make data-driven decisions and respond effectively to emerging issues.
                 </span>
               </div>
             </div>
@@ -125,13 +138,11 @@ const Problem = () => {
                 Compliance and Audit Challenges
                 </span>
                 <span className="problem-content-right-des">
-                  Web analytics is the measurement, collection, analysis and
-                  reporting of web data for purposes of under standing and
-                  optimizing web usage.
+                Compliance and audit challenges can create legal and financial risks for organizations, requiring dedicated efforts to meet regulatory requirements and ensure transparency in their operations.
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,20 +1,52 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
 import "./Home.css";
 import Lottie from "lottie-react";
-import HomeAniRight from "../../assets/Home/sjWLdPyCSD.json";
+import HomeAniRight from "./HomeAnmiRecent.json";
 import star from "../../assets/Home/str.json";
 import Logo from "../../assets/Home/Logo.png";
-import {motion} from "framer-motion"
+import {motion,useInView,useAnimation} from "framer-motion";
+
+import {BsFillArrowRightCircleFill} from "react-icons/bs"
 
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 
 function Home() {
+
+
+  const ref =useRef(null)
+  const isView =useInView(ref,{once:false})
+ const mainControls=useAnimation()
+  useEffect(()=>{
+    if(isView){
+      mainControls.start('visible')
+    }
+  },[isView])
+ 
+  
   return (
     <section className="home-wrapper" id="mainPage" >
-      <div className="home-container"  >
-        <div className="home-left-container">
-          <motion.div className="home-title-container">
+      <div ref={ref} className="home-container"  >
+
+        <motion.div className="home-left-container" 
+          variants={{
+            hidden:{opacity:0,y:-75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}}>
+          <motion.div
+
+          // variants={{
+          //   hidden:{opacity:0,y:75},
+          //   visible:{opacity:1,y:0}
+          // }}
+          // initial="hidden"
+          // animate={mainControls}
+          // transition={{duration:0.5 ,delay:0.25}}
+          
+          className="home-title-container">
             <h1 className="home-title-text">
               Your Cloud,
               <br />
@@ -30,6 +62,7 @@ function Home() {
               </span>
             </h1>
           </motion.div>
+
           <div className="home-des-container">
             <span className="home-des-text">
               Welcome to ClouSec, where we bring you a comprehensive solution
@@ -60,11 +93,10 @@ function Home() {
             
             to="contact"
             spy={true}
-            smooth={true}
-            offset={-60}
+            offset={-70}
             duration={600}
             style={{zIndex:50}}>
-              <button className="home-button-left" style={{width:"100%"}} >Get started</button>
+              <button className="home-button-left" style={{width:"100%"}} >Get started <BsFillArrowRightCircleFill color="white" size={20} /></button> 
               </Link>
            
             <Link
@@ -74,16 +106,24 @@ function Home() {
             offset={10}
             duration={100}>
             <button className="home-button-right">
-              ABOUT US <span>&gt;</span>
+              ABOUT US 
             </button>
             </Link>
           </div>
-        </div>
-        <div className="home-right-container"  >
+        </motion.div>
+        
+        <motion.div 
+          variants={{
+            hidden:{opacity:0,y:75},
+            visible:{opacity:1,y:0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration:0.5 ,delay:0.25}} className="home-right-container"  >
           <div className="lottie-container">
             <Lottie animationData={HomeAniRight} />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

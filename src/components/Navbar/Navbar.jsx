@@ -1,17 +1,28 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useEffect, useState } from "react";
+import "./Navbar.scss";
+import { MdQrCodeScanner } from "react-icons/md";
+import { routes } from "../../Data/Dummy";
 import { Link } from "react-scroll";
 import clouSecLogo from "./clouSecLogo.png";
-import { RiMenu3Fill } from "react-icons/ri";
-import OutsideClickHandler from "react-outside-click-handler";
 
-function Navbar() {
+import { FiMenu } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
+import OutsideClickHandler from "react-outside-click-handler";
+import Menuicon from "../../assets/menFii.json";
+import Lottie from "lottie-react";
+
+const Navbar = () => {
+  const [cliked, setCliked] = useState(false);
   const [nav, setNav] = useState(false);
   const [menuOpened, setmenuOpened] = useState(false);
-  const getMenuStyle = () => {
-    if (document.documentElement.clientWidth <= 800) {
-      return { top: !menuOpened && "-1999%" };
+  useEffect(() => {
+    if (document.documentElement.clientWidth <= 769) {
+      setmenuOpened(true);
     }
+  }, []);
+
+  const handelClicked = (clicked) => {
+    setCliked(!clicked);
   };
   const changeBackground = () => {
     if (window.scrollY >= 50) {
@@ -21,156 +32,90 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", changeBackground);
+
+
   return (
-    <section className="nav-wrapper">
-      <div
-        className={nav ? "nav-container navActive " : "nav-container "}
-        id="home"
-      >
-        <div
-          
-        >
-          <Link className="nav-logo"  to="mainPage"
-                  spy={true}
-                  smooth={true}
-                  offset={10}
-                  duration={600} >
+    <section className="nav_wrapper">
+      <div className={nav ? "nav_container navActive" : "nav_container"}>
+        <div className="nav_logo">
+          <Link
+            style={{cursor:'pointer'}}
+            to="mainPage"
+            spy={true}
+            offset={10}
+            duration={600}
+
+          >
             <img src={clouSecLogo} alt="" width={120} />
           </Link>
         </div>
-
         <OutsideClickHandler
           onOutsideClick={() => {
-            setmenuOpened(false);
+            setCliked(false);
           }}
         >
-          <div className="nav-center-container">
-            <ul className="nav-menu " style={getMenuStyle(menuOpened)}>
-              <li
-                onClick={() => {
-                  setmenuOpened(false);
-                }}
-              >
-                <Link
-                  to="mainPage"
-                  spy={true}
-                  smooth={true}
-                  offset={10}
-                  duration={600}
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
-              <li
-                onClick={() => {
-                  setmenuOpened(false);
-                }}
-              >
-                <Link
-                  to="fea"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={600}
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
-                  Features
-                </Link>
-              </li>
-              <li
-                onClick={() => {
-                  setmenuOpened(false);
-                }}
-              >
-                <Link
-                  to="roadMap"
-                  spy={true}
-                  smooth={true}
-                  offset={-60}
-                  duration={600}
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
-                  Roadmap
-                </Link>
-              </li>
-              <li
-                onClick={() => {
-                  setmenuOpened(false);
-                }}
-              >
-                <Link
-                  to="solution"
-                  spy={true}
-                  smooth={true}
-                  offset={-90}
-                  duration={600}
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
-                  Solutions
-                </Link>
-              </li>
-              <li
-                onClick={() => {
-                  setmenuOpened(false);
-                }}
-              >
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-60}
-                  duration={600}
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <button
-                  className="navbar-button"
-                  onClick={() => {
-                    setmenuOpened(false);
-                  }}
-                >
+          <div className={cliked ? "nav_menu active" : "nav_menu "}>
+            <ul className="nav_menu_ul_container">
+              {routes.map((route, i) => (
+                <li key={i} className="nav_li">
                   <Link
-                    to="contact"
+                    to={route.path}
                     spy={true}
-                    smooth={true}
-                    offset={-60}
+                    offset={-70}
                     duration={600}
                     onClick={() => {
-                      setmenuOpened(false);
+                      setCliked(false);
                     }}
+            style={{cursor:'pointer'}}
+            
+
                   >
-                    Request Demo
+                    {route.name}
                   </Link>
-                </button>
-              </li>
+                </li>
+              ))}
             </ul>
+            <div className="nav_button_container">
+              <Link
+               to="contact"
+               spy={true}
+               offset={-70}
+               duration={600}
+               onClick={() => {
+                 setCliked(false);
+               }}
+            style={{cursor:'pointer'}}
+            >
+              <button className="nav_button">Request Demo</button>
+              </Link>
+            </div>
           </div>
         </OutsideClickHandler>
-      </div>
-      <div
-        className="menuIcon"
-        onClick={() => {
-          setmenuOpened((pre) => !pre);
-        }}
-      >
-        <RiMenu3Fill size={34} />
+
+        <div className="menu_icon">
+          {cliked ? (
+            <AiOutlineClose
+              size={33}
+              style={{}}
+              color="black"
+              onClick={() => {
+                handelClicked(cliked);
+              }}
+            />
+          ) : (
+            <Lottie
+              animationData={Menuicon}
+              style={{ width: "31px", opacity: 0.8 }}
+              color="black"
+              onClick={() => {
+                handelClicked(cliked);
+              }}
+            />
+          )}
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Navbar;

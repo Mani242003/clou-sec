@@ -1,0 +1,52 @@
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @mixin flexColStart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+  }
+
+  @mixin flexRowStart {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    
+  }
+
+
+  @mixin Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    outline: none;
+    color: white;
+    background-color:#F43F5E ;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+  }
+  @mixin ButtonHover{
+   
+  
+    color: white;
+    background: transparent;
+    border:2px solid white;
+    font-weight: 500;
+    
+  }

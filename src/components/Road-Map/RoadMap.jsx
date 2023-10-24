@@ -1,3 +1,4 @@
+import React,{useEffect,useRef} from "react";
 import "./RoadMap.css";
 import aws from "../../assets/roadmap/aws.png";
 import EC2 from "../../assets/roadmap/EC2.png";
@@ -6,10 +7,22 @@ import cloudIaac from "../../assets/roadmap/cloudIaac.png";
 import googlecloud from "../../assets/roadmap/google-cloud.png";
 import cloudTrail from "../../assets/roadmap/cloudTrail.png";
 import {BsFillCalendarFill} from "react-icons/bs"
+import {motion,useInView,useAnimation} from "framer-motion";
+
+
 
 const RoadMap = () => {
+  
+  const ref =useRef(null)
+  const isView =useInView(ref,{once:false})
+ const mainControls=useAnimation()
+  useEffect(()=>{
+    if(isView){
+      mainControls.start('visible')
+    }
+  },[isView])
   return (
-    <section className="r-wraper " id="roadMap">
+    <section className="r-wraper " id="roadMap" ref={ref}>
       {/* <div className="roadmap-circle1"></div>
       <div className="roadmap-circle2"></div>
       <div className="roadmap-circle3"></div>
@@ -23,7 +36,15 @@ const RoadMap = () => {
       </div>
       
 
-      <div className="r-timeLine-container" >
+      <motion.div 
+      variants={{
+        hidden:{opacity:0,y:-75},
+        visible:{opacity:1,y:0}
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{duration:0.5 ,delay:0.25}}
+      className="r-timeLine-container"  >
         <div className="r-container r-left-container" >
           <img src={aws} alt="" className="r-left-outerImg" />
           <div className="textBoxContainer" style={{ background: "#E4F6EF" }}>
@@ -146,7 +167,7 @@ const RoadMap = () => {
 
         </ul>
       </div>*/}
-      </div>
+      </motion.div>
     </section>
   );
 };

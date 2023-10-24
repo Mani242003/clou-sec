@@ -1,7 +1,6 @@
 .FeaPage-wrapper {
   width: 100%;
   background: #F8F9FA;
-  font-family: "Poppins", sans-serif;
 }
 .FeaPage-Container {
   padding: 2rem;
@@ -22,7 +21,7 @@
 .feaPage-header-text2 {
   color: black;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
   opacity: 0.8;
 }
 .feaPage-header-text3 {
@@ -70,7 +69,6 @@
   color: black;
 
   opacity: 0.8;
-  font-family: "Open Sans", sans-serif;
 }
 .feaPage-col-1-text-3 {
   color: black;
@@ -87,7 +85,6 @@
   color: black;
 
   opacity: 0.8;
-  font-family: "Open Sans", sans-serif;
 }
 .feaPage-main-col-2 {
   display: flex;
@@ -137,7 +134,7 @@
 
 @media (max-width: 768px) {
   .FeaPage-Container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .feaPage-header {
     

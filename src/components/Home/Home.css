@@ -4,6 +4,7 @@
 
 }
 .home-container {
+  
   display: flex;
 }
 .home-container > div {
@@ -20,16 +21,17 @@
   color: black;
   opacity: 0.8;
   line-height: 4.5rem;
+  font-weight: 500;
   /* opacity: 0.8; */
   /* font-family: 'Rubik', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 
 
 }
 .hom-typeWriter-text {
   color: #5e6fec;
   /* font-family: "Poppins", sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 
 
 
@@ -38,7 +40,7 @@
   color: black;
   opacity: 0.8;
   padding-top: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 
 }
 .home-des-text {
@@ -84,9 +86,9 @@
   /* padding: 0.9rem 0; */
   font-size: 14px;
   position: absolute;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .home-button-container {
   width: 55%;
@@ -96,14 +98,19 @@
   justify-content: space-between;
 }
 .home-button-left {
-  padding: 0.6rem 1.7rem;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
+  letter-spacing: 1px;
   outline: none;
   border: none;
   background: #5e6fec;
   color: white;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 17px;
   cursor: pointer;
 }
@@ -115,7 +122,7 @@
   background: transparent;
   /* border-bottom: 1px solid #5e6fec; */
   color: #5e6fec;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   border-radius: 4px;
   width: 100%;
@@ -137,12 +144,13 @@
   /* height: px; */
 }
 .home-top-start-text{
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   opacity: 0.8;
   margin-left: 3%;
 }
 .contact-left-bottom-text{
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  
 
   
 }
@@ -150,12 +158,13 @@
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
+    padding-top: 1rem;
   }
   /* Left side */
 
   .home-left-container{
     padding-top: 7.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
   .home-title-text {
     font-size: 45px;
@@ -182,16 +191,17 @@
       font-size: 1.5rem;
       display: flex;
     justify-content: space-between;
+    font-weight: 500;
   }
   .home-button-container {
-    width: 100%;
+    width: 90%;
    
   }
 
   .home-button-left {
-    padding: 0.6rem 1.7rem;
+    padding: 0.6rem 1rem;
   
-    font-weight: 400;
+    /* font-weight: 400; */
    
   }
   

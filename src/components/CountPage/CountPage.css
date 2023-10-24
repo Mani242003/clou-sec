@@ -46,26 +46,23 @@
   
 }
 .countpage-left-text-1 {
-  font-family: "Poppins", sans-serif;
   font-size: 2.6rem;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
   opacity: 0.8;
 }
 .countpage-left-text-2 {
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: black;
   opacity: 0.8;
 }
 .countpage-left-button {
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 0.8rem;
   outline: none;
   border: none;
   background: #5E6FEC;
   color: white;
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
   
   font-size: 19px;
   z-index: 1;
@@ -78,7 +75,6 @@
   
 
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
 }
 .countPage-right-container {
   position: relative;
@@ -128,14 +124,12 @@
 }
 
 .countPage-right-count-content-text1 {
-  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   color: black;
   opacity: 0.8;
 }
 .countPage-right-count-content-text2 {
-  font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 768px) {
   .countPage-wrapper {
